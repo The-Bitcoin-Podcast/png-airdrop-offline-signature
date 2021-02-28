@@ -70,13 +70,13 @@ Account.enable_unaudited_hdwallet_features()
 If your Trezor has a seed phrase + passphare, do this to load your account:
 
 ```python3
-from_acct = Account.from_mnemonic("put your seed phrase", "your passphrase")
+from_acct = Account.from_mnemonic("put your lowecase space separated seed phrase", "your passphrase")
 ```
 
 Otherwise, if your Trezor uses only a seed phrase:
 
 ```python3
-from_acct = Account.from_mnemonic("put your seed phrase")
+from_acct = Account.from_mnemonic("put your lowercase space separated seed phrase")
 ```
 
 If Python complains you don't have a valid seed phrase, make sure you made no typos in the words. See the [official English dictionary for seed phrases (BIP39)](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt).

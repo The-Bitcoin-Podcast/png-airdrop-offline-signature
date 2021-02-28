@@ -81,7 +81,7 @@ from_acct = Account.from_mnemonic("lowercase space separated seed phrase")
 
 If Python complains you don't have a valid seed phrase, make sure you made no typos in the words. See the [official English dictionary for seed phrases (BIP39)](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt).
 
-Confirm your address is what you expect it to be. If its wrong. Do not proceed.
+Confirm your address is what you expect it to be. If its wrong, do not proceed.
 
 ```python3
 print(from_acct.address)  # make sure it matches what you expect

@@ -98,9 +98,8 @@ os.system(cmd)
 ```
 
 The QR code should appear directly in the terminal. Use the Xubuntu terminal `View: Zoom Out` menu option as many times as needed. Use Google Lens to get its value onto your cell phone's clipboard. Then email it to yourself. Since its a signed transaction, its safe to do. Keep in mind this portion of data will be published to a public blockchain. At this point, you can turn off your temporary Xubuntu machine. Its no longer needed.
-```
 
-# Time to Claim Your Destiny (ONLINE)
+## Time to Claim Your Destiny (ONLINE)
 
 At this point, you can either reboot your computer using the Xubuntu flash drive, or use another normal   computer with web3 and python3 installed. In Python:
 
@@ -114,7 +113,7 @@ w3.eth.sendRawTransaction(signed_rawTransaction)
 
 The resulting `HexBytes('Ox...')` indicates the transaction has been submitted to the Avalanche C-chain. You can look for it at (Avascan)[https://avascan.info/].
 
-# Next Steps (COMING SOON TO THIS TUTORIAL)
+## Next Steps (COMING SOON TO THIS TUTORIAL)
 
 * Show how to move PNG and other ERC20 tokens from a Trezor wallet to a non-Trezor wallet.
 * How to withdraw any existing AVAX stored in your Trezor wallet.

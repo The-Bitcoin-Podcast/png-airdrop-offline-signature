@@ -9,3 +9,22 @@
 * Computer that can be booted by USB flash drive
 * USB flash drive loaded with 64-bit [Xubuntu 20.04](https://xubuntu.org/release/20-04/)
 * Cell phone with [Google Lens app](https://play.google.com/store/apps/details?id=com.google.ar.lens&hl=en_US&gl=US)
+
+## Prepare Web3 Environment
+
+Boot computer with USB Flash drive loaded with Xubuntu 20.04. Machine should be connected to the Internet for the beginning steps:
+
+```bash
+cd  # start in home directory
+sudo apt update
+sudo apt install -y build-essential git python3-dev python3-venv
+python3 -m venv venv
+source venv/bin/activate
+git clone https://github.com/heuer/segno.git  # segno==1.3.2.dev0 at time of writing
+cd segno  # return to home directory
+python3 setup.py install
+cd
+pip3 install web3  # 5.16.0 at time of writing
+python3
+```
+You should now be in a Python 3.8 interactive session.

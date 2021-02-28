@@ -114,7 +114,7 @@ w3.eth.sendRawTransaction(signed_rawTransaction)
 
 The resulting `HexBytes('Ox...')` indicates the transaction has been submitted to the Avalanche C-chain. You can look for it at (Avascan)[https://avascan.info/].
 
-# Next Steps
+# Next Steps (COMING SOON TO THIS TUTORIAL)
 
-* Show how to move PNG token from Trezor wallet to another more useable wallet.
-* How to withdraw any existing AVAX in your Trezor wallet.
+* Show how to move PNG and other ERC20 tokens from a Trezor wallet to a non-Trezor wallet.
+* How to withdraw any existing AVAX stored in your Trezor wallet.

@@ -10,7 +10,7 @@
 * USB flash drive loaded with 64-bit [Xubuntu 20.04](https://xubuntu.org/release/20-04/)
 * Cell phone with [Google Lens app](https://play.google.com/store/apps/details?id=com.google.ar.lens&hl=en_US&gl=US)
 
-## Prepare Web3 Environment
+## Prepare Python and segno QR Code Programs
 
 Boot computer with USB Flash drive loaded with Xubuntu 20.04. Machine should be connected to the Internet for the beginning steps:
 
@@ -28,3 +28,25 @@ pip3 install web3  # 5.16.0 at time of writing
 python3
 ```
 You should now be in a Python 3.8 interactive session.
+
+## Load Web3 and Pangolin Claim Contract
+
+The following will be a pain to type in, but its worth it to do manually for good security.
+
+```python3
+from web3 import Web3, HTTPProvider
+claim_abi = """\
+[
+  {
+	"inputs": [],
+	"name": "claim",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+  }
+]
+"""
+provider = HTTPProvider("https://api.avax.network/ext/bc/C/rpc")
+w3 = Web3(provider)
+pangolin = w3.eth.contract(address="0x0C58C2041da4CfCcF5818Bbe3b66DBC23B3902d9", abi=claim_abi)
+```

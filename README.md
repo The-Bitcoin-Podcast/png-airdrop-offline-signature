@@ -67,10 +67,16 @@ from web3.eth import Account
 Account.enable_unaudited_hdwallet_features()
 ```
 
-If your Trezor has a seed phrase + passphare, do this to load your account:
+If your Trezor has a seed phrase + passphrase, do this to load your account:
 
 ```python3
 from_acct = Account.from_mnemonic("lowecaser space separated seed phrase", "your passphrase")
+```
+
+If your Trezor has a seed phrase + passphrase, and lives on a different derivation path, do this to load your account:
+
+```python3
+from_acct = Account.from_mnemonic("lowecaser space separated seed phrase", "your passphrase", "m/44'/60'/0'/0/[update derivation path here]")
 ```
 
 Otherwise, if your Trezor uses only a seed phrase:

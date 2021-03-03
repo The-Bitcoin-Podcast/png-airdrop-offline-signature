@@ -23,9 +23,9 @@ sudo apt install -y build-essential git python3-dev python3-venv
 python3 -m venv venv
 source venv/bin/activate
 git clone https://github.com/heuer/segno.git  # segno==1.3.2.dev0 at time of writing
-cd segno  # return to home directory
+cd segno
 python3 setup.py install
-cd
+cd  # return to home directory
 pip3 install web3  # 5.16.0 at time of writing
 python3
 ```

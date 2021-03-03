@@ -117,7 +117,7 @@ signed_rawTransaction = "my tranaction hex code"
 w3.eth.sendRawTransaction(signed_rawTransaction)
 ```
 
-The resulting `HexBytes('Ox...')` indicates the transaction has been submitted to the Avalanche C-chain. You can look for it at (Avascan)[https://avascan.info/].
+The resulting `HexBytes('Ox...')` indicates the transaction has been submitted to the Avalanche C-chain. You can look for it at [Avascan](https://avascan.info/).
 
 ## Next Steps (COMING SOON TO THIS TUTORIAL)
 

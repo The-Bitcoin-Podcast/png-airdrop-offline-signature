@@ -32,7 +32,7 @@ python3
 
 ## Load Web3 and Pangolin Claim Contract (ONLINE)
 
-You should now be in a Python 3.8 interactive session. The following will be a pain to type in, but its worth it to do manually for good security. The following must be done while conntected to the Internet.
+You should now be in a Python 3.8 interactive session. The following will be a pain to type in, but its worth it to do manually for good security. The following must be done while connected to the Internet.
 
 ```python3
 from web3 import Web3, HTTPProvider
@@ -70,13 +70,13 @@ Account.enable_unaudited_hdwallet_features()
 If your Trezor has a seed phrase + passphrase, do this to load your account:
 
 ```python3
-from_acct = Account.from_mnemonic("lowecaser space separated seed phrase", "your passphrase")
+from_acct = Account.from_mnemonic("lowercase space separated seed phrase", "your passphrase")
 ```
 
 If your Trezor has a seed phrase + passphrase, and lives on a different derivation path, do this to load your account:
 
 ```python3
-from_acct = Account.from_mnemonic("lowecaser space separated seed phrase", "your passphrase", "m/44'/60'/0'/0/[update derivation path here]")
+from_acct = Account.from_mnemonic("lowercase space separated seed phrase", "your passphrase", "m/44'/60'/0'/0/[update derivation path here]")
 ```
 
 Otherwise, if your Trezor uses only a seed phrase:
